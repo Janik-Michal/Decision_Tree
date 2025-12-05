@@ -2,7 +2,6 @@
 [:python_version < "3.8"]
 importlib-metadata
 
-[testing]
-setuptools
+[dev]
 pytest
 pytest-cov

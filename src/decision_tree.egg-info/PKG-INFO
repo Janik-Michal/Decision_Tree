@@ -1,23 +1,28 @@
 Metadata-Version: 2.4
 Name: decision-tree
-Version: 0.0.post1.dev1+g081521798.d20251204
-Summary: Add a short description here!
+Version: 0.1.0
+Summary: Decision Tree implementation
 Home-page: https://github.com/pyscaffold/pyscaffold/
-Author: Michal
-Author-email: mickarjanik@student.agh.edu.pl
+Author: Your Name
+Author-email: you@example.com
 License: MIT
 Project-URL: Documentation, https://pyscaffold.org/
 Platform: any
 Classifier: Development Status :: 4 - Beta
 Classifier: Programming Language :: Python
+Requires-Python: >=3.10
 Description-Content-Type: text/x-rst; charset=UTF-8
 License-File: LICENSE.txt
 Requires-Dist: importlib-metadata; python_version < "3.8"
-Provides-Extra: testing
-Requires-Dist: setuptools; extra == "testing"
-Requires-Dist: pytest; extra == "testing"
-Requires-Dist: pytest-cov; extra == "testing"
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-cov; extra == "dev"
+Dynamic: author
+Dynamic: author-email
 Dynamic: license-file
+Dynamic: provides-extra
+Dynamic: requires-python
+Dynamic: summary
 
 .. These are examples of badges you might want to add to your README:
    please update the URLs accordingly
