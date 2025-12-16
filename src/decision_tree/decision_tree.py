@@ -8,15 +8,6 @@ from dataclasses import dataclass
 import argparse
 import sys
 
-# Optional sklearn import for comparison demo
-try:
-    from sklearn.tree import DecisionTreeClassifier as SKTree
-    from sklearn.datasets import load_iris
-    from sklearn.model_selection import train_test_split
-    from sklearn.metrics import accuracy_score
-except:
-    SKTree = None
-
 
 # -----------------------------
 # Basic impurity metrics
@@ -174,49 +165,3 @@ class DecisionTreeClassifier:
         pred = self.predict(X)
         return (pred == y).mean()
 
-
-# -----------------------------
-# Demo: compare with sklearn
-# -----------------------------
-
-def compare(max_depth=None):
-    """Train both this tree and sklearn's tree on the Iris dataset and print accuracies."""
-    if SKTree is None:
-        print("scikit-learn not installed – demo disabled.")
-        return
-
-    data = load_iris()
-    X = data.data
-    y = data.target
-
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=0)
-
-    # Our tree
-    my = DecisionTreeClassifier(max_depth=max_depth)
-    my.fit(X_train, y_train)
-    acc_my = my.score(X_test, y_test)
-
-    # sklearn tree
-    sk = SKTree(max_depth=max_depth)
-    sk.fit(X_train, y_train)
-    acc_sk = accuracy_score(y_test, sk.predict(X_test))
-
-    print("=== Comparison ===")
-    print("My Decision Tree:", acc_my)
-    print("sklearn:", acc_sk)
-
-
-# -----------------------------
-# Simple CLI
-# -----------------------------
-
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--demo", action="store_true")
-    parser.add_argument("--max-depth", type=int, default=None)
-    args = parser.parse_args()
-
-    if args.demo:
-        compare(max_depth=args.max_depth)
-    else:
-        print("Usage: python dt.py --demo")
