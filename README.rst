@@ -30,7 +30,7 @@
 |
 
 =============
-decision-tree
+Decision-Tree
 =============
 
 
@@ -41,7 +41,6 @@ The model builds a binary decision tree by selecting feature thresholds that min
 The implementation is designed for educational purposes and demonstrates how decision trees work internally. It is validated using unit tests and compared against scikit-learn’s DecisionTreeClassifier, achieving comparable accuracy on standard datasets.
 
 
-A longer description of your project goes here...
 
 
 .. _pyscaffold-notes:
@@ -51,4 +50,5 @@ Note
 
 This project has been set up using PyScaffold 4.6. For details and usage
 information on PyScaffold see https://pyscaffold.org/.
+
 
