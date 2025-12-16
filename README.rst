@@ -56,7 +56,7 @@ pytest
 
 ---
 
-## ℹ️ Note
+##  Note
 
 This project was generated using **PyScaffold 4.6**.
 
@@ -65,11 +65,12 @@ For more information about PyScaffold, visit:
 
 ---
 
-## 📄 License
+##  License
 
 MIT License
 
 ---
+
 
 
 
