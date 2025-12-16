@@ -34,7 +34,11 @@ decision-tree
 =============
 
 
-    Add a short description here!
+    This project is a simple and transparent implementation of a Decision Tree classifier based on the CART algorithm, written in pure Python using NumPy.
+
+The model builds a binary decision tree by selecting feature thresholds that minimize impurity using Gini impurity or Shannon entropy. Tree construction is fully deterministic and supports configurable parameters such as maximum depth and minimum samples per split.
+
+The implementation is designed for educational purposes and demonstrates how decision trees work internally. It is validated using unit tests and compared against scikit-learn’s DecisionTreeClassifier, achieving comparable accuracy on standard datasets.
 
 
 A longer description of your project goes here...
@@ -47,3 +51,4 @@ Note
 
 This project has been set up using PyScaffold 4.6. For details and usage
 information on PyScaffold see https://pyscaffold.org/.
+
