@@ -1,4 +1,10 @@
-
+## 👥 Współtwórcy
+<a href="https://github.com/username1">
+  <img src="https://github.com/username1.png" width="50" />
+</a>
+<a href="https://github.com/username2">
+  <img src="https://github.com/username2.png" width="50" />
+</a>
 
 .. image:: https://img.shields.io/badge/-PyScaffold-005CA0?logo=pyscaffold
     :alt: Project generated with PyScaffold
@@ -44,6 +50,7 @@ Note
 
 This project has been set up using **PyScaffold 4.6**. For details and usage
 information on PyScaffold see [https://pyscaffold.org/](https://pyscaffold.org/).
+
 
 
 
