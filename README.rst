@@ -15,34 +15,62 @@ The model builds a **binary decision tree** by selecting feature thresholds that
 The implementation is designed for **educational purposes**, demonstrating how decision trees work internally. It is validated using **unit tests** and can be compared against scikit-learn’s `DecisionTreeClassifier`, achieving comparable accuracy on standard datasets.
 
 
----
- Installation
+##  Installation
 
-To run the project, first set up a Python virtual environment and install dependencies:
+### 1. Create a virtual environment
 
-# Create virtual environment
-
+```bash
 python -m venv .venv
+```
 
-# Activate virtual environment
+### 2. Activate the virtual environment
 
-# Windows    .\.venv\Scripts\activate
+**Windows**
 
-# Linux / macOS    source .venv/bin/activate
+```bash
+.\.venv\Scripts\activate
+```
 
+**Linux / macOS**
 
-# Install dependencies
+```bash
+source .venv/bin/activate
+```
 
+### 3. Install dependencies
+
+```bash
 pip install numpy scikit-learn pytest
+```
 
 
 ---
 
-Note
-====
+##  Running Tests
 
-This project has been set up using **PyScaffold 4.6**. For details and usage
-information on PyScaffold see: [https://pyscaffold.org/](https://pyscaffold.org/).
+To run the unit tests:
+
+```bash
+pytest
+```
+
+---
+
+## ℹ️ Note
+
+This project was generated using **PyScaffold 4.6**.
+
+For more information about PyScaffold, visit:
+[https://pyscaffold.org/](https://pyscaffold.org/)
+
+---
+
+## 📄 License
+
+MIT License
+
+---
+
 
 
 
