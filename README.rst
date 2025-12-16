@@ -40,35 +40,21 @@ The implementation is designed for **educational purposes**, demonstrating how d
 
 To run the project, first set up a Python virtual environment and install dependencies:
 
-```bash
 # Create virtual environment
 
 python -m venv .venv
 
 # Activate virtual environment
 
-# Windows
+# Windows    .\.venv\Scripts\activate
 
-.\.venv\Scripts\activate
-
-# Linux / macOS
-
-source .venv/bin/activate
+# Linux / macOS    source .venv/bin/activate
 
 
 # Install dependencies
 
 pip install numpy scikit-learn pytest
 
-.\.venv\Scripts\activate
-
-# Linux / macOS
-
-source .venv/bin/activate
-
-# Install dependencies
-
-pip install numpy scikit-learn pytest
 
 ---
 
@@ -77,5 +63,6 @@ Note
 
 This project has been set up using **PyScaffold 4.6**. For details and usage
 information on PyScaffold see [https://pyscaffold.org/](https://pyscaffold.org/).
+
 
 
